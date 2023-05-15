@@ -1,0 +1,15 @@
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/bin/Debug/net7.0/ETicaretAPI.Application.deps.json
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/bin/Debug/net7.0/ETicaretAPI.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/bin/Debug/net7.0/ETicaretAPI.Application.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/bin/Debug/net7.0/ETicateAPI.Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/bin/Debug/net7.0/ETicateAPI.Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.csproj.AssemblyReference.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.csproj.CopyComplete
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/refint/ETicaretAPI.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ETicaretAPI.Application.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/obj/Debug/net7.0/ref/ETicaretAPI.Application.dll

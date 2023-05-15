@@ -1,0 +1,66 @@
+﻿<Properties StartupConfiguration="{F3F4CA80-EC04-4B5C-BFCB-AD9FC87C9596}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Presentation.ETicaretAPI.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.ItemProperties.Infrastructure.ETicateAPI.Infrastructure FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/ETicaretAPI.Persistance/Contexts/ETicaretAPIDbContext.cs">
+    <Files>
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Contexts/ETicaretAPIDbContext.cs" Line="19" Column="62" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/WriteRepository.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Repositories/ICustomerReadRepository.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Repositories/ICustomerWriteRepository.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Repositories/IOrderReadRepository.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Repositories/IOrderWriteRepository.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Repositories/IProductReadRepository.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Repositories/IProductWriteRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/CustomerReadRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/CustomerWriteRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/OrderReadRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/OrderWriteRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/ProductReadRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/ProductWriteRepository.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/ServiceRegistration.cs" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/DesignTimeDbContext.cs" />
+      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs" Line="32" Column="1" />
+      <File FileName="Presentation/ETicaretAPI.Presentation/Program.cs" />
+      <File FileName="Core/ETicateAPI.Domain/Entities/Common/BaseEntitiy.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ETicateAPI" expanded="True">
+            <Node name="Core" expanded="True">
+              <Node name="ETicaretAPI.Application" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="ETicateAPI.Domain" expanded="True">
+                <Node name="Entities" expanded="True">
+                  <Node name="Common" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Infrastructure" expanded="True">
+              <Node name="ETicaretAPI.Persistance" expanded="True">
+                <Node name="Contexts" expanded="True">
+                  <Node name="ETicaretAPIDbContext.cs" selected="True" />
+                </Node>
+                <Node name="Repositories" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Presentation" expanded="True">
+              <Node name="ETicaretAPI.Presentation" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

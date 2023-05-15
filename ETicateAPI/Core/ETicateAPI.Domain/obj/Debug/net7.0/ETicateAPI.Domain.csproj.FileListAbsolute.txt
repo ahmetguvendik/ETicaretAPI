@@ -1,0 +1,12 @@
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/bin/Debug/net7.0/ETicateAPI.Domain.deps.json
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/bin/Debug/net7.0/ETicateAPI.Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/bin/Debug/net7.0/ETicateAPI.Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.csproj.AssemblyReference.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/refint/ETicateAPI.Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ETicateAPI.Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicateAPI.Domain/obj/Debug/net7.0/ref/ETicateAPI.Domain.dll
