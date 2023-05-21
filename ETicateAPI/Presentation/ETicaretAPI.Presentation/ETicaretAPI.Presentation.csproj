@@ -21,6 +21,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,5 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
   </ItemGroup>
 </Project>

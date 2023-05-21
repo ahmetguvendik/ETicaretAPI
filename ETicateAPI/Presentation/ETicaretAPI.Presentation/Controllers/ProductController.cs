@@ -28,7 +28,14 @@ namespace ETicaretAPI.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var products = _readRepository.GetAll();          
+            var products = _readRepository.GetAll().Select(x => new
+            {
+                x.Id,
+                x.Name,
+                x.Price,
+                x.Stock,
+                x.CreatedTime
+            });
             return Ok(products);
 
         }
@@ -60,8 +67,15 @@ namespace ETicaretAPI.Presentation.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            await _writeRepository.Remove(id);
+            await _writeRepository.RemoveAsync(id);
             await _writeRepository.SaveAsync();
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload()
+        {
+            
             return Ok();
         }
         

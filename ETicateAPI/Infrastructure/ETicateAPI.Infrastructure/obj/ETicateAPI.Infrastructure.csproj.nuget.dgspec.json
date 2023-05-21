@@ -42,6 +42,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -157,6 +161,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

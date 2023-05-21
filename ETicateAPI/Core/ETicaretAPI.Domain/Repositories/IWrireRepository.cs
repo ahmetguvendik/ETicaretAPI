@@ -7,8 +7,8 @@ namespace ETicaretAPI.Application.Repositories
     {
 		 Task<bool> AddAsync(T model);
 		 Task<bool> AddAsync(List<T> model);
-		 Task<bool> Remove(T model);
-		 Task<bool> Remove(int id);
+		 bool Remove(T model);
+		 Task<bool> RemoveAsync(int id);
 		 bool Update(T model);
 		Task<int> SaveAsync();
 		

@@ -1,0 +1,5 @@
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.csproj.AssemblyReference.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.csproj.CoreCompileInputs.cache

@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "Yaq+yhdWzraNBrbRGpz77luGY5CIQ23ziKQjQc1QBn8=",
+  "Hash": "P4QxBZSG3QphNbpz74cYwQ/Fm9gRN96QMeVAi12sxNE=",
   "Source": "ETicaretAPI.Presentation",
   "BasePath": "_content/ETicaretAPI.Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ETicaretAPI.Presentation/wwwroot",
+      "Source": "ETicaretAPI.Presentation",
+      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/wwwroot/",
+      "BasePath": "_content/ETicaretAPI.Presentation",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

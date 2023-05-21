@@ -3,6 +3,7 @@ using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Persistance.Contexts;
 using ETicateAPI.Domain.Entities.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace ETicaretAPI.Persistance.Repositories
 {
@@ -27,16 +28,16 @@ namespace ETicaretAPI.Persistance.Repositories
             throw new NotImplementedException();
         }
 
-        public  Task<bool> Remove(T model)
+        public bool Remove(T model)
         {
-          
-            return Remove(model);
+            EntityEntry<T> entityState = Table.Remove(model);
+            return entityState.State == EntityState.Deleted;
         }
 
-        public async Task<bool> Remove(int id)
+        public async Task<bool> RemoveAsync(int id)
         {
-            var data = await Table.FindAsync(id);
-            return true;
+            T model = await Table.FirstOrDefaultAsync(x => x.Id == id);
+            return Remove(model);
         }
 
         public bool Update(T model)
