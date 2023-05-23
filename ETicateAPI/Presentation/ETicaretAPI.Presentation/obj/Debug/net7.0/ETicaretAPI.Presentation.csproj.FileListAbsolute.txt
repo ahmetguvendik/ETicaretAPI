@@ -83,3 +83,6 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Npgsql.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/ETicaretAPI.Presentation.staticwebassets.runtime.json
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/MediatR.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

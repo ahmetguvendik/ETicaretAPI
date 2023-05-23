@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ETicaretAPI.Application.Features.Commands.CreateProduct;
+using ETicaretAPI.Application.Features.Commands.DeleteProduct;
+using ETicaretAPI.Application.Features.Commands.UpdateProduct;
+using ETicaretAPI.Application.Features.Queries.GetAllProduct;
 using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Application.ViewModels;
 using ETicaretAPI.Persistance.Repositories;
 using ETicateAPI.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,66 +23,45 @@ namespace ETicaretAPI.Presentation.Controllers
     {
         private readonly IProductWriteRepository _writeRepository;
         private readonly IProductReadRepository _readRepository;
+        private readonly IMediator _mediator;
 
-        public ProductController(IProductWriteRepository writeRepository, IProductReadRepository readRepository)
+        public ProductController(IProductWriteRepository writeRepository, IProductReadRepository readRepository,IMediator mediator)
         {
             _readRepository = readRepository;
             _writeRepository = writeRepository;
+            _mediator = mediator;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var products = _readRepository.GetAll().Select(x => new
-            {
-                x.Id,
-                x.Name,
-                x.Price,
-                x.Stock,
-                x.CreatedTime
-            });
-            return Ok(products);
+           var response =  await _mediator.Send(new GetAllProductQueryRequest());
+           return Ok(response);
 
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateProduct(VM_Create_Product model)
+        public async Task<IActionResult> CreateProduct(CreateProductCommandRequest model)
         {
-            Product product = new Product();
-            product.Name = model.Name;
-            product.Stock = model.Stock;
-            product.Price = model.Price;
-            await _writeRepository.AddAsync(product);
-            await _writeRepository.SaveAsync();
-            return Ok();
+            var response = await _mediator.Send(model);
+            return Ok(response);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(VM_Update_Product model)
+        public async Task<IActionResult> UpdateProduct(UpdateProductCommandRequest model)
         {
-            Product product = await _readRepository.GetById(model.Id);
-            product.Id = model.Id;
-            product.Name = model.Name;
-            product.Stock = model.Stock;
-            product.Price = model.Price;
-            await _writeRepository.SaveAsync();
-            return Ok();
+            var response = await _mediator.Send(model);
+            return Ok(response);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> DeleteProduct([FromRoute]DeleteProductCommandRequest model)
         {
-            await _writeRepository.RemoveAsync(id);
-            await _writeRepository.SaveAsync();
-            return Ok();
+            DeleteProductCommandResponse response = await _mediator.Send(model);
+            return Ok(response);
         }
 
-        [HttpPost("[action]")]
-        public async Task<IActionResult> Upload()
-        {
-            
-            return Ok();
-        }
+      
         
     }
 }

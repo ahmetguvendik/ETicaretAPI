@@ -1,34 +1,50 @@
 ﻿<Properties StartupConfiguration="{F3F4CA80-EC04-4B5C-BFCB-AD9FC87C9596}|https">
   <MonoDevelop.Ide.ItemProperties.Presentation.ETicaretAPI.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/ETicateAPI.Infrastructure/Services/FileService.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs">
     <Files>
-      <File FileName="Infrastructure/ETicaretAPI.Persistance/Repositories/WriteRepository.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/ViewModels/VM_Update_Product.cs" />
-      <File FileName="Core/ETicateAPI.Domain/Entities/Common/BaseEntitiy.cs" />
-      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/Repositories/IWrireRepository.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/Services/IFileService.cs" Line="10" Column="1" />
-      <File FileName="Presentation/ETicaretAPI.Presentation/Program.cs" Line="22" Column="22" />
-      <File FileName="Infrastructure/ETicateAPI.Infrastructure/Services/FileService.cs" Line="10" Column="31" />
+      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs" Line="47" Column="33" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/DeleteProduct/DeleteProductCommandRequest.cs" Line="11" Column="1" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/DeleteProduct/DeleteProductCommandHandler.cs" Line="20" Column="48" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/DeleteProduct/DeleteProductCommandResponse.cs" Line="6" Column="3" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/CreateProduct/CreateProductCommandRequest.cs" Line="1" Column="1" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/UpdateProduct/UpdateProductCommandRequest.cs" Line="1" Column="1" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ETicateAPI" expanded="True">
             <Node name="Core" expanded="True">
+              <Node name="ETicaretAPI.Application" expanded="True">
+                <Node name="Features" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="CreateProduct" expanded="True" />
+                    <Node name="DeleteProduct" expanded="True" />
+                    <Node name="UpdateProduct" expanded="True" />
+                  </Node>
+                  <Node name="Queries" expanded="True">
+                    <Node name="GetAllProduct" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="ViewModels" expanded="True" />
+              </Node>
               <Node name="ETicateAPI.Domain" expanded="True" />
             </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="ETicaretAPI.Persistance" expanded="True" />
-              <Node name="ETicateAPI.Infrastructure" expanded="True">
-                <Node name="Services" expanded="True">
-                  <Node name="FileService.cs" selected="True" />
-                </Node>
-              </Node>
+              <Node name="ETicateAPI.Infrastructure" expanded="True" />
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="ETicaretAPI.Presentation" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="ProductController.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -36,13 +52,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Infrastructure.ETicateAPI.Infrastructure FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

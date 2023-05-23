@@ -1,4 +1,5 @@
 ﻿using ETicaretAPI.Persistance;
+using ETicaretAPI.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddPersistanceService();
+builder.Services.AddMediatorService();
 
 var app = builder.Build();
 
