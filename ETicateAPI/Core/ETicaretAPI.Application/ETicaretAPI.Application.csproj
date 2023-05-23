@@ -21,6 +21,7 @@
     <None Remove="Features\Commands\CreateProduct\" />
     <None Remove="Features\Commands\UpdateProduct\" />
     <None Remove="Features\Commands\DeleteProduct\" />
+    <None Remove="Features\Queries\GetByIdProduct\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -34,11 +35,11 @@
     <Folder Include="Features\Commands\CreateProduct\" />
     <Folder Include="Features\Commands\UpdateProduct\" />
     <Folder Include="Features\Commands\DeleteProduct\" />
+    <Folder Include="Features\Queries\GetByIdProduct\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="MediatR" Version="12.0.1" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 </Project>

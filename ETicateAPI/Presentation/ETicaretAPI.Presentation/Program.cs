@@ -1,5 +1,8 @@
 ﻿using ETicaretAPI.Persistance;
 using ETicaretAPI.Application;
+using ServiceRegistration = ETicaretAPI.Application.ServiceRegistration;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddPersistanceService();
-builder.Services.AddMediatorService();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(ServiceRegistration).GetTypeInfo().Assembly));
+
 
 var app = builder.Build();
 

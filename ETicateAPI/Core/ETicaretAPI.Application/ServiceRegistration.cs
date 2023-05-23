@@ -1,5 +1,4 @@
-﻿using System;
-using ETicaretAPI.Application.Repositories;
+﻿using System.Reflection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,10 +8,8 @@ namespace ETicaretAPI.Application
 	{
         public static void AddMediatorService(this IServiceCollection services)
         {
-            services.AddMediatR(cfg =>
-            {
-                cfg.RegisterServicesFromAssemblies(typeof(ServiceRegistration).Assembly);
-            });
+          
+
         }
     }
 }

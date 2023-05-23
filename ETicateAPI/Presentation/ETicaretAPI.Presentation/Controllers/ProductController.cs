@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ETicaretAPI.Application.Features.Commands.CreateProduct;
+﻿using ETicaretAPI.Application.Features.Commands.CreateProduct;
 using ETicaretAPI.Application.Features.Commands.DeleteProduct;
 using ETicaretAPI.Application.Features.Commands.UpdateProduct;
 using ETicaretAPI.Application.Features.Queries.GetAllProduct;
+using ETicaretAPI.Application.Features.Queries.GetByIdProduct;
 using ETicaretAPI.Application.Repositories;
-using ETicaretAPI.Application.ViewModels;
-using ETicaretAPI.Persistance.Repositories;
-using ETicateAPI.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,14 +15,12 @@ namespace ETicaretAPI.Presentation.Controllers
     [Route("api/[controller]")]
     public class ProductController : Controller
     {
-        private readonly IProductWriteRepository _writeRepository;
-        private readonly IProductReadRepository _readRepository;
+       
         private readonly IMediator _mediator;
 
-        public ProductController(IProductWriteRepository writeRepository, IProductReadRepository readRepository,IMediator mediator)
+        public ProductController(IMediator mediator)
         {
-            _readRepository = readRepository;
-            _writeRepository = writeRepository;
+        
             _mediator = mediator;
         }
 
@@ -61,6 +53,12 @@ namespace ETicaretAPI.Presentation.Controllers
             return Ok(response);
         }
 
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById([FromRoute]GetByIdProductQueryRequest model)
+        {
+            var response = await _mediator.Send(model);
+            return Ok(response);
+        }
       
         
     }

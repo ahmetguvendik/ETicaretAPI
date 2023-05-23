@@ -1,20 +1,12 @@
 ﻿<Properties StartupConfiguration="{F3F4CA80-EC04-4B5C-BFCB-AD9FC87C9596}|https">
   <MonoDevelop.Ide.ItemProperties.Presentation.ETicaretAPI.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
-    </BreakpointStore>
+    <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/ETicaretAPI.Domain/ServiceRegistration.cs">
     <Files>
-      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs" Line="47" Column="33" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/DeleteProduct/DeleteProductCommandRequest.cs" Line="11" Column="1" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/DeleteProduct/DeleteProductCommandHandler.cs" Line="20" Column="48" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/DeleteProduct/DeleteProductCommandResponse.cs" Line="6" Column="3" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/CreateProduct/CreateProductCommandRequest.cs" Line="1" Column="1" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/UpdateProduct/UpdateProductCommandRequest.cs" Line="1" Column="1" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs" Line="24" Column="10" />
+      <File FileName="Core/ETicaretAPI.Domain/ServiceRegistration.cs" Line="15" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,17 +14,8 @@
           <Node name="ETicateAPI" expanded="True">
             <Node name="Core" expanded="True">
               <Node name="ETicaretAPI.Application" expanded="True">
-                <Node name="Features" expanded="True">
-                  <Node name="Commands" expanded="True">
-                    <Node name="CreateProduct" expanded="True" />
-                    <Node name="DeleteProduct" expanded="True" />
-                    <Node name="UpdateProduct" expanded="True" />
-                  </Node>
-                  <Node name="Queries" expanded="True">
-                    <Node name="GetAllProduct" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="ViewModels" expanded="True" />
+                <Node name="Dependencies" expanded="True" />
+                <Node name="ServiceRegistration.cs" selected="True" />
               </Node>
               <Node name="ETicateAPI.Domain" expanded="True" />
             </Node>
@@ -42,9 +25,7 @@
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="ETicaretAPI.Presentation" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="ProductController.cs" selected="True" />
-                </Node>
+                <Node name="Controllers" expanded="True" />
               </Node>
             </Node>
           </Node>
