@@ -1,11 +1,13 @@
 ﻿using System;
 using ETicateAPI.Domain.Entities;
 using ETicateAPI.Domain.Entities.Common;
+using ETicateAPI.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ETicaretAPI.Persistance.Contexts
 {
-	public class ETicaretAPIDbContext : DbContext
+	public class ETicaretAPIDbContext : IdentityDbContext<AppUser,AppRole,string>
 	{
 		public ETicaretAPIDbContext(DbContextOptions options) : base(options) { }
 
@@ -13,7 +15,7 @@ namespace ETicaretAPI.Persistance.Contexts
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Customer> Customers { get; set; }
-
+  
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var datas = ChangeTracker.Entries<BaseEntitiy>();

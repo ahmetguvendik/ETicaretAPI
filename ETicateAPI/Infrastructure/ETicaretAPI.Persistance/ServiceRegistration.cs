@@ -3,6 +3,7 @@ using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Persistance.Contexts;
 using ETicaretAPI.Persistance.Repositories;
 using ETicateAPI.Domain.Entities;
+using ETicateAPI.Domain.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +14,7 @@ namespace ETicaretAPI.Persistance
 		public static void AddPersistanceService(this IServiceCollection services)
 		{
 			services.AddDbContext<ETicaretAPIDbContext>(opt => opt.UseNpgsql("User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=myDataBase;"));
+			services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<ETicaretAPIDbContext>();
 			services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
 			services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
             services.AddScoped<IOrderReadRepository, OrderReadRepository>();

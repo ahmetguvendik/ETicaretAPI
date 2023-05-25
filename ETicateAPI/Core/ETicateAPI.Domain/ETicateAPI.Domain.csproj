@@ -10,9 +10,15 @@
     <None Remove="Entities\" />
     <None Remove="Entities\Common\" />
     <None Remove="..\..\.editorconfig" />
+    <None Remove="Entities\Identity\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Entities\Common\" />
+    <Folder Include="Entities\Identity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   </ItemGroup>
 </Project>
