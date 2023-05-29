@@ -1,4 +1,5 @@
 ﻿using System;
+using ETicaretAPI.Application.Services;
 using ETicateAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -9,11 +10,13 @@ namespace ETicaretAPI.Application.Features.Commands.Users.SignInUser
 	{
         private readonly SignInManager<AppUser> _signInManager;
         private readonly UserManager<AppUser> _userManager;
+        private readonly ITokenHandler _handler;
 
-        public SignInUserCommandHandler(SignInManager<AppUser> signInManager,UserManager<AppUser> userManager)
+        public SignInUserCommandHandler(SignInManager<AppUser> signInManager,UserManager<AppUser> userManager,ITokenHandler handler)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _handler = handler;
         }   
         public async Task<SignInUserCommandResponse> Handle(SignInUserCommandRequest request, CancellationToken cancellationToken)
         {
@@ -26,10 +29,13 @@ namespace ETicaretAPI.Application.Features.Commands.Users.SignInUser
             var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
             if (result.Succeeded)
             {
+                var token = _handler.CreateAccesToken();
                 return new SignInUserCommandResponse()
                 {
                     isSucceced = result.Succeeded,
-                    Message = "Giris Yapildi"
+                    Message = "Giris Yapildi",
+                    Token = token
+                   
                 };
             }
             else
@@ -37,7 +43,9 @@ namespace ETicaretAPI.Application.Features.Commands.Users.SignInUser
                 return new SignInUserCommandResponse()
                 {
                     isSucceced = result.Succeeded,
-                    Message = "Giris Yaparken Bir Hata Olustu"
+                    Message = "Giris Yaparken Bir Hata Olustu",
+                    Token = null
+                    
                 };
             }
         }

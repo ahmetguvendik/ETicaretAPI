@@ -3,3 +3,15 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.AssemblyInfoInputs.cache
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.AssemblyInfo.cs
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicateAPI.Infrastructure.deps.json
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicateAPI.Infrastructure.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicateAPI.Infrastructure.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicaretAPI.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicateAPI.Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicaretAPI.Application.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/bin/Debug/net7.0/ETicateAPI.Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.csproj.CopyComplete
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/refint/ETicateAPI.Infrastructure.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ETicateAPI.Infrastructure.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Infrastructure/ETicateAPI.Infrastructure/obj/Debug/net7.0/ref/ETicateAPI.Infrastructure.dll

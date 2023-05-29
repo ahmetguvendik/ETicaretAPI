@@ -1,28 +1,26 @@
 ﻿<Properties StartupConfiguration="{F3F4CA80-EC04-4B5C-BFCB-AD9FC87C9596}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Presentation.ETicaretAPI.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/ETicaretAPI.Presentation/Program.cs">
     <Files>
-      <File FileName="Core/ETicateAPI.Domain/Entities/Identity/AppRole.cs" Line="6" Column="44" />
-      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/ServiceRegistration.cs" />
-      <File FileName="Presentation/ETicaretAPI.Presentation/Program.cs" Line="37" Column="1" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Queries/GetByIdProduct/GetByIdProductQueryRequest.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Queries/GetByIdProduct/GetByIdProductQueryResponse.cs" Line="1" Column="1" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Queries/GetByIdProduct/GetByIdProductQueryHandler.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Queries/GetAllProduct/GetAllProductQueryHandler.cs" />
-      <File FileName="Core/ETicateAPI.Domain/Entities/Product.cs" />
-      <File FileName="Core/ETicateAPI.Domain/Entities/Identity/AppUser.cs" Line="6" Column="44" />
-      <File FileName="Presentation/ETicaretAPI.Presentation/Controllers/UserController.cs" Line="24" Column="18" />
-      <File FileName="Infrastructure/ETicaretAPI.Persistance/ServiceRegistration.cs" Line="1" Column="1" />
-      <File FileName="Infrastructure/ETicaretAPI.Persistance/Contexts/ETicaretAPIDbContext.cs" Line="21" Column="62" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/CreateUser/CreateUserCommandRequest.cs" Line="8" Column="5" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/CreateUser/CreateUserCommandResponse.cs" Line="9" Column="3" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/CreateUser/CreateUserCommandHandler.cs" Line="19" Column="37" />
-      <File FileName="Infrastructure/ETicaretAPI.Persistance/DesignTimeDbContext.cs" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/SignInUser/SignInUserCommandRequest.cs" Line="10" Column="3" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/SignInUser/SignInUserCommandHandler.cs" Line="20" Column="10" />
-      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/SignInUser/SignInUserCommandResponse.cs" Line="10" Column="2" />
+      <File FileName="Presentation/ETicaretAPI.Presentation/Program.cs" Line="40" Column="1" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/CreateUser/CreateUserCommandRequest.cs" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/CreateUser/CreateUserCommandHandler.cs" Line="25" Column="14" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/SignInUser/SignInUserCommandRequest.cs" Line="1" Column="1" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/SignInUser/SignInUserCommandHandler.cs" Line="37" Column="34" />
+      <File FileName="Core/ETicaretAPI.Domain/Services/ITokenHandler.cs" Line="8" Column="35" />
+      <File FileName="Core/ETicaretAPI.Domain/DTOs/Token.cs" Line="7" Column="48" />
+      <File FileName="Infrastructure/ETicateAPI.Infrastructure/Services/TokenHandler.cs" Line="15" Column="117" />
+      <File FileName="Infrastructure/ETicaretAPI.Persistance/ServiceRegistration.cs" Line="12" Column="2" />
+      <File FileName="Infrastructure/ETicateAPI.Infrastructure/ServiceRegistration.cs" Line="8" Column="11" />
+      <File FileName="Core/ETicaretAPI.Domain/Features/Commands/Users/SignInUser/SignInUserCommandResponse.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,15 +28,15 @@
           <Node name="ETicateAPI" expanded="True">
             <Node name="Core" expanded="True">
               <Node name="ETicaretAPI.Application" expanded="True">
+                <Node name="DTOs" expanded="True" />
                 <Node name="Features" expanded="True">
                   <Node name="Commands" expanded="True">
                     <Node name="Users" expanded="True">
-                      <Node name="CreateUser" expanded="True" />
                       <Node name="SignInUser" expanded="True" />
                     </Node>
                   </Node>
-                  <Node name="Queries" expanded="True" />
                 </Node>
+                <Node name="Services" expanded="True" />
               </Node>
               <Node name="ETicateAPI.Domain" expanded="True">
                 <Node name="Entities" expanded="True">
@@ -47,10 +45,10 @@
               </Node>
             </Node>
             <Node name="Infrastructure" expanded="True">
-              <Node name="ETicaretAPI.Persistance" expanded="True">
-                <Node name="Contexts" expanded="True" />
+              <Node name="ETicaretAPI.Persistance" expanded="True" />
+              <Node name="ETicateAPI.Infrastructure" expanded="True">
+                <Node name="Services" expanded="True" />
               </Node>
-              <Node name="ETicateAPI.Infrastructure" expanded="True" />
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="ETicaretAPI.Presentation" expanded="True">
@@ -61,16 +59,6 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Presentation.ETicaretAPI.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Class1.cs" relfile="Core/ETicaretAPI.Domain/Class1.cs" line="3" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
