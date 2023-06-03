@@ -1,0 +1,362 @@
+2023-06-03 19:53:11.787 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-03 19:53:12.030 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-03 19:53:12.030 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-03 19:53:12.053 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-03 19:53:12.053 +03:00 [INF] Hosting environment: Development
+2023-06-03 19:53:12.053 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-03 19:53:13.199 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 19:53:13.244 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 46.4409ms
+2023-06-03 19:53:13.281 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/swagger-ui.css - -
+2023-06-03 19:53:13.287 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-06-03 19:53:13.287 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/swagger-ui.css - - - 200 144929 text/css 5.7599ms
+2023-06-03 19:53:13.287 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/swagger-ui-bundle.js - -
+2023-06-03 19:53:13.293 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-06-03 19:53:13.293 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 5.8583ms
+2023-06-03 19:53:13.293 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/swagger-ui-standalone-preset.js - -
+2023-06-03 19:53:13.295 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-06-03 19:53:13.295 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 1.8529ms
+2023-06-03 19:53:13.366 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 19:53:13.401 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.0115ms
+2023-06-03 19:53:56.063 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 64
+2023-06-03 19:53:56.080 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 19:53:56.085 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 19:53:56.104 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 19:53:56.500 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 19:53:56.572 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 19:53:56.574 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 469.5667ms
+2023-06-03 19:53:56.575 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 19:53:56.577 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 64 - 200 - application/json;+charset=utf-8 514.4941ms
+2023-06-03 19:54:01.413 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 63
+2023-06-03 19:54:01.417 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 19:54:01.417 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 19:54:01.417 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 19:54:01.570 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 19:54:01.702 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 19:54:01.704 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 286.9467ms
+2023-06-03 19:54:01.704 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 19:54:01.705 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 63 - 200 - application/json;+charset=utf-8 291.6966ms
+2023-06-03 19:56:36.254 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-03 19:56:36.452 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-03 19:56:36.453 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-03 19:56:36.457 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-03 19:56:36.457 +03:00 [INF] Hosting environment: Development
+2023-06-03 19:56:36.457 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-03 19:56:37.592 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 19:56:37.637 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 46.2297ms
+2023-06-03 19:56:37.736 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 19:56:37.774 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 37.6004ms
+2023-06-03 22:39:01.129 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-03 22:39:01.382 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-03 22:39:01.407 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-03 22:39:01.409 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-03 22:39:01.409 +03:00 [INF] Hosting environment: Development
+2023-06-03 22:39:01.409 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-03 22:39:02.621 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 22:39:02.672 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 52.0580ms
+2023-06-03 22:39:02.720 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 22:39:02.762 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.7306ms
+2023-06-03 22:39:40.076 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 63
+2023-06-03 22:39:40.105 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:39:40.110 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 22:39:40.129 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 22:39:40.527 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 22:39:40.651 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 22:39:40.656 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 525.3803ms
+2023-06-03 22:39:40.656 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 22:39:40.659 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 63 - 200 - application/json;+charset=utf-8 582.9606ms
+2023-06-03 22:39:45.553 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 22:39:45.557 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:39:45.557 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:39:45.560 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:39:45.604 +03:00 [INF] List Product
+2023-06-03 22:39:45.605 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 22:39:45.642 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 22:39:45.661 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 100.0723ms
+2023-06-03 22:39:45.661 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:39:45.661 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 107.5052ms
+2023-06-03 22:40:33.502 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/Product application/json 56
+2023-06-03 22:40:33.506 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:40:33.506 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.CreateProduct (ETicaretAPI.Presentation)'
+2023-06-03 22:40:33.510 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ETicaretAPI.Application.Features.Commands.CreateProduct.CreateProductCommandRequest) on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:40:33.596 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?' (DbType = Int64), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("CreatedTime", "Name", "Price", "Stock", "UpdatedTime")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2023-06-03 22:40:33.602 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.CreateProduct.CreateProductCommandResponse'.
+2023-06-03 22:40:33.602 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.CreateProduct (ETicaretAPI.Presentation) in 91.823ms
+2023-06-03 22:40:33.602 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.CreateProduct (ETicaretAPI.Presentation)'
+2023-06-03 22:40:33.602 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/Product application/json 56 - 200 - application/json;+charset=utf-8 101.9866ms
+2023-06-03 22:40:42.298 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 22:40:42.298 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:40:42.299 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:40:42.299 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:40:42.301 +03:00 [INF] List Product
+2023-06-03 22:40:42.302 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 22:40:42.305 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 22:40:42.358 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 58.3536ms
+2023-06-03 22:40:42.358 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:40:42.358 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 60.4111ms
+2023-06-03 22:40:58.702 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 22:40:58.703 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:40:58.703 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:40:58.703 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:40:58.707 +03:00 [INF] List Product
+2023-06-03 22:40:58.707 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 22:40:58.736 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 22:40:58.737 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 34.2275ms
+2023-06-03 22:40:58.737 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:40:58.738 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 35.6777ms
+2023-06-03 22:41:15.185 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 22:41:15.187 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 2.6107ms
+2023-06-03 22:41:15.251 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 22:41:15.255 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.3193ms
+2023-06-03 22:41:18.001 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 22:41:18.001 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:41:18.002 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:41:18.002 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:41:18.003 +03:00 [INF] List Product
+2023-06-03 22:41:18.003 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 22:41:18.031 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 22:41:18.033 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 31.3643ms
+2023-06-03 22:41:18.033 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:41:18.034 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 32.7727ms
+2023-06-03 22:46:03.826 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-03 22:46:04.068 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-03 22:46:04.068 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-03 22:46:04.070 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-03 22:46:04.070 +03:00 [INF] Hosting environment: Development
+2023-06-03 22:46:04.070 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-03 22:46:05.230 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 22:46:05.285 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 56.1870ms
+2023-06-03 22:46:05.340 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 22:46:05.376 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.5791ms
+2023-06-03 22:46:23.057 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 59
+2023-06-03 22:46:23.079 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:46:23.084 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 22:46:23.101 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 22:46:23.498 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 22:46:23.623 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 22:46:23.627 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 524.449ms
+2023-06-03 22:46:23.627 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 22:46:23.631 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 59 - 200 - application/json;+charset=utf-8 573.5710ms
+2023-06-03 22:46:28.424 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 22:46:28.428 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:46:28.428 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:46:28.432 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:46:28.474 +03:00 [INF] List Product
+2023-06-03 22:46:28.475 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 22:46:28.485 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 22:46:28.558 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 125.7826ms
+2023-06-03 22:46:28.559 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:46:28.559 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 134.7070ms
+2023-06-03 22:57:37.394 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-03 22:57:37.644 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-03 22:57:37.644 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-03 22:57:37.695 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-03 22:57:37.695 +03:00 [INF] Hosting environment: Development
+2023-06-03 22:57:37.695 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-03 22:57:38.767 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 22:57:38.821 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 55.8137ms
+2023-06-03 22:57:38.871 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 22:57:38.906 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.0448ms
+2023-06-03 22:57:53.491 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 59
+2023-06-03 22:57:53.514 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:57:53.519 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 22:57:53.537 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 22:57:53.930 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 22:57:54.054 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 22:57:54.059 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 520.8244ms
+2023-06-03 22:57:54.059 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 22:57:54.062 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 59 - 200 - application/json;+charset=utf-8 571.2670ms
+2023-06-03 22:57:58.516 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 22:57:58.520 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 22:57:58.520 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:57:58.525 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 22:57:58.566 +03:00 [INF] List Product
+2023-06-03 22:57:58.567 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 22:57:58.577 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 22:57:58.650 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 125.2231ms
+2023-06-03 22:57:58.650 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 22:57:58.651 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 134.2167ms
+2023-06-03 23:00:16.390 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User application/json 134
+2023-06-03 23:00:16.395 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 23:00:16.396 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.CreateUser (ETicaretAPI.Presentation)'
+2023-06-03 23:00:16.401 +03:00 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(ETicaretAPI.Application.Features.Commands.Users.CreateUser.CreateUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 23:00:16.585 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 23:00:16.636 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime), @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = Boolean), @p14='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2023-06-03 23:00:16.640 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.CreateUser.CreateUserCommandResponse'.
+2023-06-03 23:00:16.640 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.CreateUser (ETicaretAPI.Presentation) in 239.0357ms
+2023-06-03 23:00:16.640 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.CreateUser (ETicaretAPI.Presentation)'
+2023-06-03 23:00:16.640 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User application/json 134 - 200 - application/json;+charset=utf-8 250.1939ms
+2023-06-03 23:00:38.285 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 23:00:38.286 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 23:00:38.286 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 23:00:38.287 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 23:00:38.288 +03:00 [INF] List Product
+2023-06-03 23:00:38.288 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 23:00:38.317 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 23:00:38.322 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 34.8502ms
+2023-06-03 23:00:38.322 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 23:00:38.322 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 37.3911ms
+2023-06-03 23:00:43.952 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 23:00:43.952 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 23:00:43.952 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 23:00:43.953 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 23:00:43.957 +03:00 [INF] List Product
+2023-06-03 23:00:43.957 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 23:00:43.961 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 23:00:44.006 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 52.9881ms
+2023-06-03 23:00:44.006 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 23:00:44.006 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 54.8166ms
+2023-06-03 23:01:05.957 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 55
+2023-06-03 23:01:05.958 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 23:01:05.959 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 23:01:05.959 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 23:01:06.069 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 23:01:06.248 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 23:01:06.249 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 289.6445ms
+2023-06-03 23:01:06.249 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 23:01:06.249 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 55 - 200 - application/json;+charset=utf-8 291.5903ms
+2023-06-03 23:01:38.098 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-03 23:01:38.323 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-03 23:01:38.323 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-03 23:01:38.324 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-03 23:01:38.324 +03:00 [INF] Hosting environment: Development
+2023-06-03 23:01:38.324 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-03 23:01:39.489 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-03 23:01:39.538 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 49.0462ms
+2023-06-03 23:01:39.589 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-03 23:01:39.624 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.1250ms
+2023-06-03 23:01:52.036 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 55
+2023-06-03 23:01:52.056 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 23:01:52.061 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 23:01:52.078 +03:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandRequest) on controller ETicaretAPI.Presentation.Controllers.UserController (ETicaretAPI.Presentation).
+2023-06-03 23:01:52.466 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-06-03 23:01:52.581 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.Users.SignInUser.SignInUserCommandResponse'.
+2023-06-03 23:01:52.586 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation) in 506.2813ms
+2023-06-03 23:01:52.586 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.UserController.SignIn (ETicaretAPI.Presentation)'
+2023-06-03 23:01:52.589 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/api/User/SignIn application/json 55 - 200 - application/json;+charset=utf-8 553.3170ms
+2023-06-03 23:01:57.512 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-03 23:01:57.515 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-03 23:01:57.515 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 23:01:57.518 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-03 23:01:57.563 +03:00 [INF] List Product
+2023-06-03 23:01:57.563 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-03 23:01:57.574 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-03 23:01:57.618 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 99.6147ms
+2023-06-03 23:01:57.618 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-03 23:01:57.619 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 106.5083ms
+2023-06-04 00:12:30.291 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-04 00:12:30.474 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-04 00:12:30.475 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-04 00:12:30.475 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-04 00:12:30.476 +03:00 [INF] Hosting environment: Development
+2023-06-04 00:12:30.476 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-04 00:12:31.677 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-04 00:12:31.727 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 50.9140ms
+2023-06-04 00:12:31.778 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-04 00:12:31.812 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 34.3395ms
+2023-06-04 00:12:34.637 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-04 00:12:34.660 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-04 00:12:34.666 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-04 00:12:34.681 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-04 00:12:34.970 +03:00 [INF] List Product
+2023-06-04 00:12:35.035 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 352.5805ms
+2023-06-04 00:12:35.036 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-04 00:12:35.046 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Hata alindi
+   at ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryHandler.Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken) in /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Core/ETicaretAPI.Domain/Features/Queries/GetAllProduct/GetAllProductQueryHandler.cs:line 24
+   at ETicaretAPI.Presentation.Controllers.ProductController.Get() in /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/Controllers/ProductController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/Program.cs:line 92
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-04 00:12:35.056 +03:00 [ERR] Hata alindi
+2023-06-04 00:12:35.060 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 500 - application/json 422.5835ms
+2023-06-04 00:13:02.384 +03:00 [INF] User profile is available. Using '/Users/ahmetguvendik/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-04 00:13:02.587 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-04 00:13:02.587 +03:00 [INF] Now listening on: http://localhost:5148
+2023-06-04 00:13:02.588 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-04 00:13:02.588 +03:00 [INF] Hosting environment: Development
+2023-06-04 00:13:02.588 +03:00 [INF] Content root path: /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation
+2023-06-04 00:13:03.807 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/index.html - -
+2023-06-04 00:13:03.861 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 55.2723ms
+2023-06-04 00:13:03.917 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-04 00:13:03.952 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.2774ms
+2023-06-04 00:13:06.364 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/api/Product - -
+2023-06-04 00:13:06.387 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-06-04 00:13:06.392 +03:00 [INF] Executing endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-04 00:13:06.406 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ETicaretAPI.Presentation.Controllers.ProductController (ETicaretAPI.Presentation).
+2023-06-04 00:13:06.684 +03:00 [INF] List Product
+2023-06-04 00:13:06.685 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2023-06-04 00:13:06.766 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedTime", p."Name", p."Price", p."Stock", p."UpdatedTime"
+FROM "Products" AS p
+2023-06-04 00:13:06.794 +03:00 [INF] Executed action ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation) in 386.5484ms
+2023-06-04 00:13:06.794 +03:00 [INF] Executed endpoint 'ETicaretAPI.Presentation.Controllers.ProductController.Get (ETicaretAPI.Presentation)'
+2023-06-04 00:13:06.797 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/api/Product - - - 200 - application/json;+charset=utf-8 433.3873ms

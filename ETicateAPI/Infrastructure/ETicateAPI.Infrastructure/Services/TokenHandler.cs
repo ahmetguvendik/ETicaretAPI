@@ -1,8 +1,10 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 using ETicaretAPI.Application.DTOs;
 using ETicaretAPI.Application.Services;
+using ETicateAPI.Domain.Entities.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
@@ -16,7 +18,7 @@ namespace ETicateAPI.Infrastructure.Services
             _configuration = configuration;
         }
 
-        public Token CreateAccesToken()
+        public Token CreateAccesToken(AppUser user)
         {
             Token token = new Token();
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Token:Key"]));
@@ -27,7 +29,8 @@ namespace ETicateAPI.Infrastructure.Services
                 issuer: _configuration["Token:Issuer"],
                 expires: token.ExpinationTime,
                 notBefore: DateTime.UtcNow,
-                signingCredentials: signingCredientails
+                signingCredentials: signingCredientails,
+                claims: new List<Claim> { new(ClaimTypes.Name,user.UserName)}
                 );
 
             JwtSecurityTokenHandler handler = new();

@@ -1,4 +1,6 @@
 ﻿using System;
+using ETicaretAPI.Application.DTOs;
+using ETicaretAPI.Application.Services;
 using ETicateAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -7,36 +9,41 @@ namespace ETicaretAPI.Application.Features.Commands.Users.CreateUser
 {
 	public class CreateUserCommandHandler : IRequestHandler<CreateUserCommandRequest,CreateUserCommandResponse>
 	{
-        private readonly UserManager<AppUser> _userManager;
-		public CreateUserCommandHandler(UserManager<AppUser> userManager)
+        private readonly IUserService _userService;
+		public CreateUserCommandHandler(IUserService userService)
 		{
-            _userManager = userManager;
+            _userService = userService;
 		}
 
         public async Task<CreateUserCommandResponse> Handle(CreateUserCommandRequest request, CancellationToken cancellationToken)
         {
-            AppUser user = new AppUser();
-            user.Id = Guid.NewGuid().ToString();
-            user.Email = request.Email;
-            user.UserName = request.UserName;
-            user.PhoneNumber = request.PhoneNumber;
-           var identityResult =  await _userManager.CreateAsync(user,request.Password);
-            if (identityResult.Succeeded)
+            CreateUserRequest user = new()
+            {
+                Email = request.Email,
+                Password = request.Password,
+                PasswordConfirm = request.PasswordConfirm,
+                PhoneNumber = request.PhoneNumber,
+                UserName = request.UserName
+            };
+
+          var response =  await _userService.CreateUserAsync(user);
+            if (response.isSucceced)
             {
                 return new CreateUserCommandResponse()
                 {
-                    isSucceced = identityResult.Succeeded,
-                    Message = "Basarili"
+                    isSucceced = response.isSucceced,
+                    Message =  response.Message
                 };
             }
             else
             {
                 return new CreateUserCommandResponse()
                 {
-                    isSucceced = identityResult.Succeeded,
-                    Message = "Basarili degil"
+                    isSucceced = response.isSucceced,
+                    Message = response.Message
                 };
             }
+          
         }
     }
 }

@@ -29,7 +29,7 @@ namespace ETicaretAPI.Application.Features.Commands.Users.SignInUser
             var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
             if (result.Succeeded)
             {
-                var token = _handler.CreateAccesToken();
+                var token = _handler.CreateAccesToken(user);
                 return new SignInUserCommandResponse()
                 {
                     isSucceced = result.Succeeded,

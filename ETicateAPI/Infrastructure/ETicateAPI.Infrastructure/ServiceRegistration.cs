@@ -13,6 +13,7 @@ namespace ETicateAPI.Infrastructure
             public static void AddInfrastructureService(this IServiceCollection services)
             {
             services.AddScoped<ITokenHandler, TokenHandler>();
+            services.AddScoped<IUserService, UserService>();
                
             }
         }

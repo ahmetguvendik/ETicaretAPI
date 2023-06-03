@@ -94,3 +94,14 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/ETicateAPI.Infrastructure.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/ETicateAPI.Infrastructure.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.AspNetCore.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Extensions.Hosting.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Extensions.Logging.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Formatting.Compact.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Settings.Configuration.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Sinks.Console.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Sinks.Debug.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Sinks.File.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Sinks.PeriodicBatching.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ETicateAPI/Presentation/ETicaretAPI.Presentation/bin/Debug/net7.0/Serilog.Sinks.PostgreSQL.dll
